@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.description {
+  width: 300px;
+  border: 1px solid blue;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.form {
+  width: 300px;
+}
+.form input {
+  display: block;
+}
