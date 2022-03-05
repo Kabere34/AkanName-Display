@@ -6,18 +6,53 @@
 body {
   overflow-x: hidden;
 }
-
 .description {
-  width: 300px;
-  border: 1px solid blue;
+  width: 400px;
+  margin-right: 40px;
+  margin-top: 40px;
+  background-color: white;
+  padding: 15px;
 }
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 217, 217);
+  border-radius: 40px;
+  width: 80%;
+  padding: 60px;
 }
 .form {
   width: 300px;
+  border: 1px solid green;
+  padding: 10px;
+  margin-left: 30px;
+  background-color: white;
 }
+
 .form input {
   display: block;
+}
+.button {
+  margin-top: 70px;
+}
+.bg1 {
+  padding: 10px;
+  margin-top: 20px;
+}
+.names-list {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs {
+  padding: 10px;
+  margin: 10px;
+}
+h1,
+h2,
+.form p {
+  color: #eaaa00;
+}
+p hr {
+  margin-bottom: 20px;
 }
