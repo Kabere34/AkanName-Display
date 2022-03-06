@@ -50,24 +50,34 @@
           </div>
         </div>
       </div>
-      <div class="form">
+      <!-- <div class="form">
         <p>PLEASE ENTER YOUR DETAILS HERE:</p>
+
         <form action="" id="myForm">
           <label for="birthday">Birthday:</label>
           <input type="date" id="birthday" name="birthday" />
           Gender:
-          <input type="radio" name="gender" value="female" />
-          <input type="radio" name="gender" value="male" />
-          <input
-            type="button"
-            class="button"
-            onclick="myFormValidate()"
-            value="Submit"
-          />
-
-          <!-- <button>Submit</button> -->
+          <input type="radio" name="gender" value="female" />Female
+          <input type="radio" name="gender" value="male" />Male
+          <input type="button" onclick=" myFormValidate()" value="Submit" />
         </form>
+      </div> -->
+      <div class="form">
+        <form action="" id="myForm">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" />
+          <label for="Gender:">Select Gender</label><br />
+
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" />
+          <label for="male">Male:</label>
+          <input type="radio" name="gender" value="male" />
+
+          <input type="button" onclick=" myFormValidate()" value="Submit" />
+        </form>
+        <p id="p1"></p>
       </div>
     </div>
+    <script src="/Js/script.js"></script>
   </body>
 </html>
