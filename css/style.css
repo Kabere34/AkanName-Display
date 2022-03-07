@@ -12,6 +12,7 @@ body {
   margin-top: 40px;
   background-color: white;
   padding: 15px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 .description-cnt {
   display: flex;
@@ -26,10 +27,10 @@ body {
 }
 .form {
   width: 500px;
-  border: 1px solid green;
   padding: 10px;
   margin-left: 30px;
   background-color: white;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .form input {
@@ -47,6 +48,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.female-names {
+  margin: 10px;
+}
+.male-names {
+  margin-right: 10px;
+}
 .inputs {
   padding: 10px;
   margin: 10px;
@@ -58,4 +65,19 @@ h2,
 }
 p hr {
   margin-bottom: 20px;
+}
+.button {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #eaaa00;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.p1 {
+  height: 30px;
+  background-color: #eaaa00;
+}
+label {
+  padding: 5px;
 }

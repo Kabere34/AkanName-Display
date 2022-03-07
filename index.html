@@ -53,21 +53,29 @@
 
       <div class="form">
         <form action="" id="myForm">
-          <label for="birthday">Birthday:</label>
+          <h2>Enter Your Details Below:</h2>
+          <hr />
+
+          <label class="birthday" for="birthday">Birthday:</label>
           <input type="date" id="birthday" name="birthday" />
-          <label for="Gender:">Select Gender</label><br />
+          <label for="Gender:">Select Gender:</label><br />
 
           <label for="female">Female</label>
           <input type="radio" name="gender" value="female" />
           <label for="male">Male:</label>
           <input type="radio" name="gender" value="male" />
 
-          <input type="button" onclick=" myFormValidate()" value="Submit" />
+          <input
+            class="button"
+            type="button"
+            onclick=" myFormValidate()"
+            value="Submit"
+          />
         </form>
         <p id="p1"></p>
       </div>
     </div>
-    <div class="p1"></div>
+
     <script src="/Js/script.js"></script>
   </body>
 </html>

@@ -129,5 +129,6 @@ function checkNameOfDay(day, gender) {
       : (nameOfDay = Object.values(femaleNames[6]));
     console.log("na,eOfDay :>> ", nameOfDay);
   }
-  document.getElementById("p1").innerHTML = `Your Akan name is ${nameOfDay}`;
+  document.getElementById("p1").innerHTML =
+    `Your Akan name is ${nameOfDay}`.toUpperCase();
 }
