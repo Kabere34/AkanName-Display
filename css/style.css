@@ -21,12 +21,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgb(218, 217, 217);
-  border-radius: 40px;
-  width: 80%;
+
   padding: 60px;
 }
 .form {
-  width: 300px;
+  width: 500px;
   border: 1px solid green;
   padding: 10px;
   margin-left: 30px;

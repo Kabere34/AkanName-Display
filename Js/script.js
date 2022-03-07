@@ -81,13 +81,6 @@ function myFormValidate() {
 
   day = Math.trunc(day);
 
-  // if (day === 0 && gender == "male") {
-  //   // document.getElementById("p1").innerHTML = maleNames[0];
-  //   console.log(maleNames[0]);
-  // }
-  //   if (day === 0 && gender == "male") {
-  //     console.log(maleNames[0])(Object.value(maleNames[0]));
-  //   }
   checkNameOfDay(day, gender);
 }
 
@@ -137,10 +130,4 @@ function checkNameOfDay(day, gender) {
     console.log("na,eOfDay :>> ", nameOfDay);
   }
   document.getElementById("p1").innerHTML = `Your Akan name is ${nameOfDay}`;
-  // return nameOfDay;
-
-  //   let namedisplay = checkNameOfday(day);
-  //   {
-  //     console.log("yaaay");
-  //   }
 }
