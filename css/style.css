@@ -32,7 +32,9 @@ body {
   background-color: white;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
-
+li {
+  padding: 5px;
+}
 .form input {
   display: block;
 }
@@ -53,6 +55,8 @@ body {
 }
 .male-names {
   margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 11px;
 }
 .inputs {
   padding: 10px;
