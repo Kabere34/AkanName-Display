@@ -1,23 +1,59 @@
-const dayOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+// const dayOfWeek = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
 const maleNames = [
-  "Kwasi",
-  "Kwadwo",
-  "Kwabena",
-  "Kwaku",
-  "Yaw",
-  "Kofi",
-  "Kwame",
+  {
+    Sunday: "Kwasi",
+  },
+  {
+    Monday: "Kwadwo",
+  },
+  {
+    Tuesday: "Kwabena",
+  },
+  {
+    Wednesday: "Kwaku",
+  },
+  {
+    Thursday: "Yaw",
+  },
+  {
+    Friday: "Kofi",
+  },
+  {
+    Saturday: "Kwame",
+  },
 ];
 
-const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const femaleNames = [
+  {
+    Sunday: "Akosua",
+  },
+  {
+    Monday: "Adwoa",
+  },
+  {
+    Tuesday: "Abenaa",
+  },
+  {
+    Wednesday: "Akua",
+  },
+  {
+    Thursday: "Yaa",
+  },
+  {
+    Friday: "Afua",
+  },
+  {
+    Saturday: "Ama",
+  },
+];
 
 function myFormValidate() {
   let genderOptions = document.getElementsByName("gender");
@@ -44,4 +80,67 @@ function myFormValidate() {
   console.log(Math.trunc(day), typeof Math.trunc(day), day, "date");
 
   day = Math.trunc(day);
+
+  // if (day === 0 && gender == "male") {
+  //   // document.getElementById("p1").innerHTML = maleNames[0];
+  //   console.log(maleNames[0]);
+  // }
+  //   if (day === 0 && gender == "male") {
+  //     console.log(maleNames[0])(Object.value(maleNames[0]));
+  //   }
+  checkNameOfDay(day, gender);
+}
+
+//checkNameofDay(day)
+function checkNameOfDay(day, gender) {
+  let nameOfDay;
+  if (day === 0) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[0]))
+      : (nameOfDay = Object.values(femaleNames[0]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 1) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[1]))
+      : (nameOfDay = Object.values(femaleNames[1]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 2) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[2]))
+      : (nameOfDay = Object.values(femaleNames[2]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 3) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[3]))
+      : (nameOfDay = Object.values(femaleNames[3]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 4) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[4]))
+      : (nameOfDay = Object.values(femaleNames[4]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 5) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[5]))
+      : (nameOfDay = Object.values(femaleNames[5]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  if (day === 6) {
+    gender === "male"
+      ? (nameOfDay = Object.values(maleNames[6]))
+      : (nameOfDay = Object.values(femaleNames[6]));
+    console.log("na,eOfDay :>> ", nameOfDay);
+  }
+  document.getElementById("p1").innerHTML = `Your Akan name is ${nameOfDay}`;
+  // return nameOfDay;
+
+  //   let namedisplay = checkNameOfday(day);
+  //   {
+  //     console.log("yaaay");
+  //   }
 }
